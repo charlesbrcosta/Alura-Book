@@ -1,6 +1,7 @@
 elementForInsertingBooks = document.getElementById('livros');
 
 function handleDisplayBooksOnScreen(listBooks) {
+    elementForInsertingBooks.innerHTML = '';
     listBooks.forEach(book => {
         elementForInsertingBooks.innerHTML += `
         <div class="livro">
