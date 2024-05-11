@@ -1,8 +1,8 @@
 const buttonSortByPrice = document.getElementById('btnOrdenarPorPreco');
 
-function sortByPrice() {
-    let orderedPrices = books.sort((a, b) =>  b.preco - a.preco);
+function handleSortByPrice() {
+    let orderedPrices = books.sort((a, b) =>  a.preco - b.preco);
     handleDisplayBooksOnScreen(orderedPrices);
 }
 
-buttonSortByPrice.addEventListener('click', sortByPrice);
+buttonSortByPrice.addEventListener('click', handleSortByPrice);
